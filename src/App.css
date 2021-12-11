@@ -1,38 +1,52 @@
-.App {
+.register-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+}
+.register-form form {
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 2px 5px 0 #dfdfdf, 0 8px 40px 0 rgb(10 14 29 / 6%);
+}
+.register-form input {
+  height: 1rem;
+  width: 20rem;
+  border-radius: 0.4rem;
+  border: 1px solid rgb(214, 214, 214);
+  padding: 1rem;
+  font-size: 1.2em;
+}
+.register-form textarea {
+  width: 20rem;
+  border-radius: 0.4rem;
+  border: 1px solid grey;
+  padding: 1rem;
+  font-size: 1.5em;
+  resize: none;
+}
+.register-form button {
+  padding: 1rem;
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.4rem;
+}
+.register-form button:hover {
+  background-color: rgb(231, 231, 231);
+}
+.register-form .success-message {
+  color: #59bb59;
+  margin-top: 0.5rem;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.register-form .success-step {
+  font-size: 1.1em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.register-form .success-step span {
+  font-size: 1em;
+  color: #afafaf;
+  margin-right: 0.8rem;
 }
